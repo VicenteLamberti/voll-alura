@@ -43,7 +43,7 @@ function Title({ image, children }: Props) {
     }
     return (
         <ContainerStyled>
-            <SpanStyled image={listImages[image as keyof IImages]}/>
+            {image && <SpanStyled image={listImages[image as keyof IImages]}/>}
             <TitleStyled>{children}</TitleStyled>
         </ContainerStyled>
     )
