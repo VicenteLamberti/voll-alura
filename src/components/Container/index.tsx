@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
+var ksapokspaioskj = '--cinza-claro'
 const Container = styled.section`
-background-color:  var(--cinza-claro);
+background-color:  var(${ksapokspaioskj});
 margin: 4em;
 border-radius: 16px;
 padding: 2em;
