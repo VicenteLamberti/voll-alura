@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Rating from './components/Rating';
 import Tabela from './components/Table';
 import Title from './components/Title';
+import Button from './components/Button';
 import useDadosConsulta from './useDadosConsulta';
 import useDadosProfissional from './useDadosProfissional';
 
@@ -22,8 +23,11 @@ function App() {
       <Header/>
       <Container>
         <Title>Área Administrativa</Title>
+        <Button>Cadastrar especialista</Button>
         <Tabela consultas = {consultas}/>
+        <Title image="grafico">Consultas mensais por especialista</Title>
         <Chart profissionais = {profissionais} consultas = {consultas}/>
+        <Title image="avaliacao">Avaliações de especialistas</Title>
         <Rating profissionais = {profissionais}/>
       </Container>
       <Footer/>
