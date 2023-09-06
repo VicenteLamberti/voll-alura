@@ -1,8 +1,10 @@
+
 import './App.css';
 import Chart from './components/Chart';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Rating from './components/Rating';
 import Tabela from './components/Table';
 import Title from './components/Title';
 import useDadosConsulta from './useDadosConsulta';
@@ -22,6 +24,7 @@ function App() {
         <Title>Área Administrativa</Title>
         <Tabela consultas = {consultas}/>
         <Chart profissionais = {profissionais} consultas = {consultas}/>
+        <Rating profissionais = {profissionais}/>
       </Container>
       <Footer/>
     </>
