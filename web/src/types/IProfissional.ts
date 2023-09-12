@@ -1,8 +1,15 @@
-export default interface IProfissional{
+import IEndereco from "./IEndereco";
 
-    id:number,
-    imagem:string,
-    nome:string,
-    especialidade:string,
-    nota:number
+export default interface IProfissional {
+    nome: string,
+    crm: string,
+    imagem: string,
+    especialidade: string,
+    possuiPlanoSaude: boolean,
+    senha: string,
+    planoSaude: string[],
+    estaAtivo: boolean,
+    email: string,
+    telefone: string,
+    endereco: IEndereco
 }

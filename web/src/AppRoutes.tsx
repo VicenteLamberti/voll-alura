@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import PaginaBase from "./pages/PaginaBase";
 import PaginaBaseFormulario from "./pages/PaginaBaseFormulario";
+import RotaPrivada from "./utils/RotaPrivada";
 
 function AppRoutes(){
     return (
@@ -12,7 +13,10 @@ function AppRoutes(){
             <Routes>
                 <Route path="/" element={<PaginaBase/>}>
                     <Route index element={<Home/>}/>
-                    <Route path="/dashboard" element={<Dashboard/>}/>
+                    <Route element={<RotaPrivada/>}>
+                        <Route path="/dashboard" element={<Dashboard/>}/>
+                    </Route>
+                   
               
                 </Route>
                 <Route path="/"  element={<PaginaBaseFormulario/>}>
